@@ -1,3 +1,74 @@
+/* General Styles */
+body {
+    background-color: #f0f0f0; /* The clean grey background seen in your wireframe */
+    font-family: Arial, sans-serif; /* A clear sans-serif font for readability */
+    color: #333; /* Dark grey text */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center aligns everything by default */
+}
+
+/* Header (Your brand area) */
+header {
+    background-color: #fff; /* A white banner across the top */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Navigation (The clean menu on the right) */
+nav {
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+nav a {
+    text-decoration: none; /* No underlines */
+    color: #555;
+    margin: 0 15px; /* Spaces them out like in your wireframe */
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px 0;
+}
+
+/* Hero Section (Centering and borders) */
+.hero-container img {
+    width: 100%;
+    max-width: 800px; /* Limits the max size of the bread photo */
+    height: auto;
+    border: 1px solid #ccc; /* Subtle border on the image itself */
+}
+
+/* The monospace subtitle font from your image */
+.freshly-baked-daily {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    margin-top: 30px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Optional logo styling */
+.logo {
+    width: 50px; /* Small square placeholder logo like in your wireframe */
+    height: 50px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
 body {
     font-family: Arial;
     background-color: #f5f5f5;
