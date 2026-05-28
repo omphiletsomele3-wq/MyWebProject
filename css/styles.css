@@ -1,124 +1,352 @@
-/* General Styles */
-body {
-    background-color: #f0f0f0; /* The clean grey background seen in your wireframe */
-    font-family: Arial, sans-serif; /* A clear sans-serif font for readability */
-    color: #333; /* Dark grey text */
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Center aligns everything by default */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Header (Your brand area) */
-header {
-    background-color: #fff; /* A white banner across the top */
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f8f5f2;
+    color:#333;
+    line-height:1.6;
 }
 
-header h1 {
-    font-size: 28px;
-    margin: 0;
-    font-weight: normal;
+header{
+    background-color:#8b5e3c;
+    color:white;
+    padding:20px;
+    text-align:center;
 }
 
-/* Navigation (The clean menu on the right) */
-nav {
-    margin: 30px 0;
-    font-size: 14px;
+nav{
+    background-color:#d9b99b;
+    padding:15px;
+    text-align:center;
 }
 
-nav a {
-    text-decoration: none; /* No underlines */
-    color: #555;
-    margin: 0 15px; /* Spaces them out like in your wireframe */
+nav a{
+    color:black;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
 }
 
-nav a:hover {
-    color: #333;
+nav a:hover{
+    color:white;
 }
 
-/* Main Content Area */
-main {
-    padding: 20px 0;
+main{
+    padding:30px;
 }
 
-/* Hero Section (Centering and borders) */
-.hero-container img {
-    width: 100%;
-    max-width: 800px; /* Limits the max size of the bread photo */
-    height: auto;
-    border: 1px solid #ccc; /* Subtle border on the image itself */
+footer{
+    background-color:#8b5e3c;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
 }
 
-/* The monospace subtitle font from your image */
-.freshly-baked-daily {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
-    margin-top: 30px;
-    color: #333;
-    font-weight: normal;
+.menu-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
 }
 
-/* Optional logo styling */
-.logo {
-    width: 50px; /* Small square placeholder logo like in your wireframe */
-    height: 50px;
-    border: 1px solid #ddd;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 15px;
+.card{
+    background:white;
+    width:250px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-body {
-    font-family: Arial;
-    background-color: #f5f5f5;
+.card:hover{
+    transform:scale(1.05);
 }
 
-header {
-    background-color: #8B4513;
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#8b5e3c;
+    font-weight:bold;
+}
+
+@media (max-width:768px){
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .menu-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    body{
+        font-size:14px;
+    }
+}
+
+.about-page {
+    padding: 40px;
+}
+
+.about-hero {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.about-hero img {
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #5c3b1e;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.mission-section {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.mission-box {
+    background-color: #f7f1ea;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+
+.mission-box h3 {
+    margin-bottom: 15px;
+    color: #7a4b25;
+}
+
+.mission-box p {
+    line-height: 1.6;
+}
+
+.hero{
+    height: 500px;
+    background-image: url("../images/hero bakery.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
     color: white;
-    padding: 10px;
+    padding: 20px;
 }
 
-nav a {
-    margin: 10px;
+.hero-text{
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero-text h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-button{
+    background-color: #d9b08c;
+    color: black;
+    padding: 15px 30px;
     text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-.menu-container {
+.hero-button:hover{
+    background-color: white;
+}
+
+.welcome-section{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
+
+    padding: 60px 40px;
+    flex-wrap: wrap;
+}
+
+.welcome-text{
+    flex: 1;
+}
+
+.welcome-text h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #5c3b1e;
+}
+
+.welcome-text p{
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.welcome-image img{
+    width: 450px;
+    border-radius: 12px;
+}
+
+.featured-products{
+    padding: 40px;
+    text-align: center;
+}
+
+.featured-products h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #5c3b1e;
+}
+
+.enquiry-page{
+    padding: 50px 40px;
+}
+
+.enquiry-intro{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.enquiry-intro h2{
+    font-size: 42px;
+    color: #5c3b1e;
+    margin-bottom: 15px;
+}
+
+.enquiry-intro p{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.enquiry-container{
+    display: flex;
     justify-content: center;
+}
+
+.enquiry-form{
+    width: 100%;
+    max-width: 700px;
+
+    background-color: white;
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.enquiry-form label{
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.enquiry-form input,
+.enquiry-form textarea,
+.enquiry-form select{
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+.enquiry-form textarea{
+    resize: vertical;
+}
+
+.checkbox-section{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
     margin-top: 20px;
 }
 
-.card {
-    background: white;
-    padding: 15px;
-    width: 220px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
+.enquiry-form button{
 
-.card img {
+    margin-top: 30px;
+
     width: 100%;
+
+    padding: 16px;
+
+    background-color: #7a4b25;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
 }
 
-.menu-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    width: 220px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-.card img {
-    width: 100%;
+.enquiry-form button:hover{
+    background-color: #5c3b1e;
 }
